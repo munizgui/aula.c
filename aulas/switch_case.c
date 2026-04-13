@@ -1,12 +1,16 @@
 #include<stdio.h>
 
-int main(){
-    int opcao, presenca;
-    float nota_1, nota_2, media;
-    printf("---MENU---\n");
+void menu(){printf("---MENU---\n");
     printf("1 - MEDIA DO ALUNO\n");
     printf("2 - PRESENCA DO ALUNO\n");
     printf("Digite a opcao desejada: ");
+}
+
+int main(){
+    int opcao, presenca;
+    float nota_1, nota_2, media;
+
+    menu();
     scanf("%d", &opcao);
     switch(opcao){
         case 1: 
@@ -28,7 +32,7 @@ int main(){
         if(presenca > 74 && presenca < 101 ){
             printf("Aluno Aprovado com %d %%", presenca);
         }else if(presenca > 100 || presenca < 0){
-            printf("Presenca invalida!");
+            printf("Presenca Invaida!");
         }else{
             printf("Aluno Reprovado!");
         }
