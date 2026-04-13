@@ -25,8 +25,10 @@ int main(){
         printf("\n--- PRESENCA DO ALUNO ---\n");
         printf("Digite a presenca do aluno(0-100): ");
         scanf("%d", &presenca);
-        if(presenca > 74){
+        if(presenca > 74 && presenca < 101 ){
             printf("Aluno Aprovado com %d %%", presenca);
+        }else if(presenca > 100 || presenca < 0){
+            printf("Presenca invalida!");
         }else{
             printf("Aluno Reprovado!");
         }
