@@ -22,7 +22,15 @@ int main(){
         
 
         case 2: 
-        printf("Selecionado opcao 2");
+        printf("\n--- PRESENCA DO ALUNO ---\n");
+        printf("Digite a presenca do aluno(0-100): ");
+        scanf("%d", &presenca);
+        if(presenca > 74){
+            printf("Aluno Aprovado com %d %%", presenca);
+        }else{
+            printf("Aluno Reprovado!");
+        }
+ 
         break;
 
 
